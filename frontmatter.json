@@ -17,8 +17,8 @@
           "type": "string"
         },
         {
-          "title": "Publishing date",
-          "name": "date",
+          "title": "Publishing Date",
+          "name": "pubDate",
           "type": "datetime",
           "default": "{{now}}",
           "isPublishDate": true
@@ -53,6 +53,10 @@
     {
       "title": "blog",
       "path": "[[workspace]]/src/pages/blog"
+    },
+    {
+      "title": "blog",
+      "path": "[[workspace]]/src/content/blog"
     }
   ]
 }
