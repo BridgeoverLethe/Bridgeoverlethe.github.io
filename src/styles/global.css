@@ -4,29 +4,29 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 body {
-	font-family: Verdana, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	margin: auto;
 	padding: 20px;
 	max-width: 65ch;
 	text-align: left;
-	background-color: #fff;
+	background-color: #082032;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	color: #444;
+	color: #fff;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong,
+
+/* Style headings */
+h1, h2, h3, h4, h5, h6, strong {
+	color: #ff5a5f; /* bright pink */
+	font-family: 'Russo One', sans-serif;
+}
+
 b {
-	color: #222;
+	color: #00d8ff;
 }
 a {
-	color: #3273dc;
+	color:  #ffaa00;
 }
 nav a {
 	margin-right: 10px;
