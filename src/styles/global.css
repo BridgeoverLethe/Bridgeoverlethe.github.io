@@ -4,7 +4,7 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Tajawal', serif;
 	margin: auto;
 	padding: 20px;
 	max-width: 65ch;
@@ -13,13 +13,30 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	color: #fff;
+	color: #9A9999;
 }
 
+h1 {
+    font-family: 'Merriweather', sans-serif;
+    color: #17191B;
+}
+
+h2 {
+    font-family: 'Merriweather', sans-serif;
+    color: #26292c;
+}
+
+
+h3 {
+    font-family: 'Merriweather', sans-serif;
+    color: #616260;
+}
+
+
 /* Style headings */
-h1, h2, h3, h4, h5, h6, strong {
-	color: #fdfdfd; /* darker shade of green */
-	font-family: 'Russo One', sans-serif;
+h4, h5, h6, strong {
+	color: #5c5c5c; /* darker shade of green */
+	font-family: 'Merriweather', sans-serif;
 }
 
 b {
