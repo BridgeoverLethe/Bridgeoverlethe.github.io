@@ -7,7 +7,7 @@ body {
 	font-family: 'Tajawal', sans-serif;
 	margin: auto;
 	padding: 20px;
-	max-width: 65ch;
+	max-width: 500px;
 	text-align: left;
 	background: #FEFEFE;
 	word-wrap: break-word;
@@ -43,11 +43,11 @@ b {
 	color:  #99f2c8;
 }
 a {
-	color:  #4767ac;
+	color:  #8796b6;
 }
 
 a:hover {
-	color: #002efd; /* cool blue */
+	color: #73c2bb; ;
   }
 nav a {
 	margin-right: 10px;
