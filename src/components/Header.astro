@@ -3,16 +3,19 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
-<header class="mb-8 mx-auto max-w-3xl">
-	<h1>
-		{SITE_TITLE}
-	</h1>
-	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://github.com/BridgeoverLethe" target="_blank">GitHub</HeaderLink>
-	</nav>
+<header>
+	<div>
+		<h1>
+			{SITE_TITLE}
+		</h1>
+
+		<nav>
+			<HeaderLink href="/">Home</HeaderLink>
+			<HeaderLink href="/blog">Blog</HeaderLink>
+			<HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href="https://github.com/BridgeoverLethe" target="_blank">GitHub</HeaderLink>
+		</nav>
+	</div>
 </header>
 <style>
 	header {
