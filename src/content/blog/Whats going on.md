@@ -1,9 +1,7 @@
-
-
 ---
 title: "How did this blog get here"
 description: "self examination of a sort."
-pubDate: "22 Jun 2023"
+pubDate: "Jun 22 2023"
 share: "true"
 ---
 
@@ -31,4 +29,12 @@ Well, thats enough for now, I should put this in a part two.
 
 Let’s see if that obsidian publish tool really works now shall we..
 
-Ah yes, using "?" in titles makes obsidian upset.
+After several hours:
+
+- Ah yes, using "?" in titles makes obsidian upset.
+
+Several more hours:
+- And having your date variable set to Indian Standards makes obsidian-publisher upset.
+- Not having your API key transfer to your other build is also fun.
+
+Hello world.
