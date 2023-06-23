@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Containers Example</title>
+  <style>
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      flex: 1 0 300px;
+      margin: 10px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    
+    
+    
+    .primary-header {
+    background-color: antiquewhite;
+    
+    }
+
+    
+    .primary-header-content {
+      width: 5000px;
+      border: 1px solid lime;
+      margin-inline-end: auto;
+    }
+    
+    .primary-header-content > *{
+    width: 34rem; 
+    }
+
+    .body{
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 1.124rem;
+      line-height: 1.5;
+      background-color: rgb(162, 151, 173);
+      
+      border: 2px solid black;
+      
+      }
+.blah{
+        width: min-content;
+        margin-inline: auto;
+      }
+
+</style>
+</head>
+
+<body class="body">
+  <div class="primary-header">
+    <div class="primary-header-content">
+          <h1>  This is the top of the page. Lets see if it works</h1>
+    <p>
+        And now we write paragraphs of text.
+        Text text text.
+        Text text text.
+    </p>
+    </div>
+  </div>
+
+<div class="blah"> huhg? </div>
+
+<!-- 
+  <div class="card-container">
+    <div class="card">
+      <h2>Card 1</h2>
+      <p>This is the content of Card 1.</p>
+    </div>
+    <div class="card">
+      <h2>Card 2</h2>
+      <p>This is the content of Card 2.</p>
+    </div>
+    <div class="card">
+      <h2>Card 3</h2>
+      <p>This is the content of Card 3.</p>
+    </div>
+  </div>
+
+  
+</body>
+<div class="headerbar"> Hey! this works?</div>
+  --> 
+</html>
+
+
+
+//let children decide their own heights, 
+
+// margin-inline: auto
+// background-image: url('hero-banner.png'); and then some image stuff
+// dont use height in absolute values in css files. Use padding if you want to move things around.
+// to go UP a folder, you need to ../ (this is basically root)
+// also <!-- --> is hou you add comments  
+// so backgroung image, cover and background-blend-mode: multiply/lighten make a difference.
+// as does the height of the background container element
+// and so does the size of teh container and how it resizes

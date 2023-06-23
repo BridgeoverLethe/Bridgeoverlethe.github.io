@@ -5,6 +5,7 @@
  */
 body {
 	font-family: 'Tajawal', sans-serif;
+	font-size: 16px;
 	margin: auto;
 	/*padding: 5px;*/
 	display: flex;
@@ -77,19 +78,18 @@ blockquote {
 }
 
 .container { 
-	 max-width: 64rem;
+	 max-width: 50rem;
 	 position: relative;
 	 margin: auto;
-	 
+	 padding: 1%;
 }
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero-banner.png");
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url("../../public/hero-banner-stretch.jpg");
+  background-color: #22080860;
   background-size: cover;
-  position: relative;
-}
+  padding: 1%;
+  background-blend-mode: lighten;
+ }
 
 .hero-text {
   text-align: center;
