@@ -4,18 +4,15 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getCollection } from 'astro:content';
-import FormattedDate from '../components/FormattedDate.astro';
 const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
-).slice(3);
-
+);
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		
 	</head>
 	<body>
 
@@ -68,22 +65,7 @@ const posts = (await getCollection('blog')).sort(
 			I wouldnt be happy if I wasnt working on it.
 			</p>
 					
-			<div>
-				<h1>Recent Blog Posts</h1>
-				<div class="grid">
-						
-								{
-									posts.map((post) => (
-									<div class="card">
-											<FormattedDate date={post.data.pubDate} />
-											<a href={`/blog/${post.slug}/`}>{post.data.title}</a>
-										</div>	
-									))
-								}
-						
-				  
-				</div>
-			  </div>
+              
 			
 			</div>
 		</main>
