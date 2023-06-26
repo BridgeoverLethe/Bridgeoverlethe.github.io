@@ -14,7 +14,9 @@ const posts = (await getCollection('blog')).sort(
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+	
+<head>
+	
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
 			ul {
@@ -47,9 +49,10 @@ const posts = (await getCollection('blog')).sort(
 		</style>
 	</head>
 	<body>
-		<Header />
+			
 	<main>
-			<div class="container">
+		<Nav />		
+		<div class="container">
 			<section>
 				
 					{
