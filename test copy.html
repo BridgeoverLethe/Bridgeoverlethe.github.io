@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insanely Cool Blog Front Page</title>
+  <style>
+    @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap");
+:root {
+  --color-primary: #93c2db;
+  --color-primary-alt: #ff8ae2;
+  --color-secondary: white;
+  --color-tertiary: #3385FF;
+  --color-background: #0d304e;
+  --color-background-dark: #072540;
+  --color-text: #93c2db;
+  --color-light: #fff;
+  --color-anchor: #93c2db;
+  --font-family: "Inter", sans-serif;
+  --font-weight-strong: 600;
+  --font-size-h1: 3rem;
+  --font-size-h2: 1.5rem;
+  --font-size-h3: 1.6rem;
+  --font-size-h4: 1.35rem;
+  --font-size-text: 1rem;
+  --border-radius: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-family);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+  background-color: var(--greyLight-1);
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: var(--font-weight-strong);
+  line-height: 1;
+  margin-bottom: 0.6em;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-size: clamp(2rem, 7vw, var(--font-size-h1));
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-size: clamp(2rem, 4vw, var(--font-size-h2));
+  text-align: center;
+}
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  /* text-decoration: none; */
+  color: var(--primary);
+}
+article {
+  padding: 2rem;
+}
+article section {
+  padding: 5vh 0;
+}
+main {
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 80ch;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .hero {
+     padding-top: 0.5em;
+      background-size: cover;
+      background-position: center;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    
+    .cta-button {
+      padding: 10px 20px;
+      background-color: #ff5500;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .cta-button:hover {
+      background-color: #e64900;
+    }
+    .blog-section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .blog-section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .blog-post {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Insanely Cool Blog</h1>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to our Blog</h1>
+    <p>Discover amazing articles and insights</p>
+    <button class="cta-button">Explore Now</button>
+  </section>
+
+  <section class="blog-section">
+    <h2>Latest Articles</h2>
+
+    <div class="blog-post">
+      <img src="hero-banner.png" alt="Blog Post 1" width="20%" max-width ="4em">
+      <div>
+        <h3>Article Title 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet fermentum</p>
+      </div>
+    </div>
+
+    <div class="blog-post">
+      <img src="hero-banner.png" alt="Blog Post 2" alt="Blog Post 1" width="20%" max-width ="4em">
+      <div>
+        <h3>Article Title 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet fermentum</p>
+      </div>
+    </div>
+
+    <div class="blog-post">
+      <img src="hero-banner.png" alt="Blog Post 3" alt="Blog Post 1" width="20%" max-width ="4em">
+      <div>
+        <h3>Article Title 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet fermentum</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
