@@ -16,69 +16,64 @@ const posts = (await getCollection('blog')).sort(
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
 
-	
-		
-		
+
+<body>
 <main>
 <div class="container">
 	<Nav>
 
-<div class="landing-hook">
+	<div class="landing-hook">
 	<h1>Have you ever wondered?</h1>
+		<ul>
+		<li>How the web became what it is?</li>
+		<li>What makes a healthy community?</li>
+		<li>What exactly happens in our shared information ecosystem?</li>
+		</ul>
+	</div>
 
-<ul>
-  <li>How the web became what it is?</li>
-  <li>What makes a healthy community?</li>
-  <li>What exactly happens in our shared information ecosystem?</li>
-</ul>
-</div>
-<h2>Hi, I'm Nikhil</h2>
+	<h2>Hi, I'm Nikhil</h2>
 
-<p>I have been online since the 90s. In that span, I've been a forum admin, internet apocrypha collector, and a Reddit mod. My team has been featured in Time magazine and various newspapers.</p>
+	<p>I have been online since the 90s. In that span, I've been a forum admin, internet apocrypha collector, and a Reddit mod. My team has been featured in Time magazine and various newspapers.</p>
 
-<p>At the same time, I have:</p>
-<ul>
-  <li>Been a financial startup baby (2nd round of hires, 2008 vintage... yaay).</li>
-  <li>Picked up a data science degree and an MBA (COVID vintage, yaayx2) and the ability to figure out paths where none have existed before.</li>
-</ul>
+	<p>At the same time, I have:</p>
+	<ul>
+	<li>Been a financial startup baby (2nd round of hires, 2008 vintage... yaay).</li>
+	<li>Picked up a data science degree and an MBA (COVID vintage, yaayx2) and the ability to figure out paths where none have existed before.</li>
+	</ul>
 
-<p>I've worked in startups, large firms, and volunteer groups, across cultures, work environments, and mediums.</p>
+	<p>I've worked in startups, large firms, and volunteer groups, across cultures, work environments, and mediums.</p>
 
-<p>The single thing that ties them together is this:</p>
+	<p>The single thing that ties them together is this:</p>
 
-<h2>I want to understand how healthy communities function.</h2>
+	<h2>I want to understand how healthy communities function.</h2>
 
-<h3>It's what I think about, all the time.</h3>
+	<h3>It's what I think about, all the time.</h3>
 
-<p>It's why I used my MBA dissertation to take a data-driven look at how subreddit behavior was impacted by rule changes.</p>
+	<p>It's why I used my MBA dissertation to take a data-driven look at how subreddit behavior was impacted by rule changes.</p>
 
-<p>It's why I work at Genpact in their Trust and Safety division.</p>
+	<p>It's why I work at Genpact in their Trust and Safety division.</p>
 
-<p>The core topic I am working towards is bridging the language resource gap.</p>
+	<p>The core topic I am working towards is bridging the language resource gap.</p>
 
-<p>The reason I work with Gen AI is to understand and apply it effectively. This site wouldn't exist if it weren't for the accelerated learning that it enabled. Side note - don't try and write code from scratch.</p>
+	<p>The reason I work with Gen AI is to understand and apply it effectively. This site wouldn't exist if it weren't for the accelerated learning that it enabled. Side note - don't try and write code from scratch.</p>
 
-<p>I want to make things better.</p>
-<p>I want to do it correctly.</p>
-<p>I want to do it effectively.</p>
+	<p>I want to make things better.</p>
+	<p>I want to do it correctly.</p>
+	<p>I want to do it effectively.</p>
 
-<p>My background allows me to talk to almost everyone (family disagrees, but let's just ignore them).</p>
+	<p>My background allows me to talk to almost everyone (family disagrees, but let's just ignore them).</p>
 
-<p>If this is what you think about, I'd love to talk to you and hear your thoughts.</p>
+	<p>If this is what you think about, I'd love to talk to you and hear your thoughts.</p>
 
-<p>You can reach me here:</p>
+	<p>You can reach me here:</p>
 
-<p>- Nik</p>
+	<p>- Nik</p>
 
-
-
-
-			<div>
-				<h1>Recent Blog Posts</h1>
+	<div>
+		<h1>Recent Blog Posts</h1>
 				<div class="grid">
-						
+					
 								{
 									posts.map((post) => (
 									<div class="card">
@@ -90,9 +85,9 @@ const posts = (await getCollection('blog')).sort(
 						
 				  
 				</div>
-			  </div>
+	  </div>
 			
-			</div>
+</div>
 		</main>
 		<Footer />
 	</body>
