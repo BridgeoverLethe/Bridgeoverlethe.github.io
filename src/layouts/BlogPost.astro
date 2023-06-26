@@ -33,7 +33,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		
 		<main>
 			<div class="container">
-			<article>
+			
 				<img src={heroImage} alt="" width="auto"/>
 				<h1 class="title">{title}</h1>
 				<FormattedDate date={pubDate} />
@@ -46,7 +46,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				}
 				<hr />
 				<slot />
-			</article>
+			
 		</div>
 		</main>
 		<Footer />
