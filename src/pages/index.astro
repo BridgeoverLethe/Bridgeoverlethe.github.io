@@ -15,7 +15,6 @@ const posts = (await getCollection('blog')).sort(
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<Nav>
 	</head>
 	<body>
 
@@ -24,6 +23,8 @@ const posts = (await getCollection('blog')).sort(
 		
 <main>
 <div class="container">
+	<Nav>
+
 <div class="landing-hook">
 	<h1>Have you ever wondered?</h1>
 

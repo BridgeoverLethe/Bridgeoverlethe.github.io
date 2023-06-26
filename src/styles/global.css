@@ -368,9 +368,8 @@ header {
 
 .landing-hook{
 background-color: black;
-width: 60%;
 color: #fff;
-font-family: "Abril", cursive, sans-serif;
+font-family: "Abril", "Georgia", "Times New Roman", cursive;
 font-size: clamp	(1.5rem, 5vw, 3rem);
 }
 
