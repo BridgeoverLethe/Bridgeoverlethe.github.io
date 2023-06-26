@@ -371,10 +371,10 @@ background-color: black;
 width: 60%;
 color: #fff;
 font-family: "Abril", cursive, sans-serif;
-font-size: 6rem;
+font-size: clamp	(1.5rem, 5vw, 3rem);
 }
 
 .landing-hook h1{
-font-size: 25rem;
+font-size: clamp (2rem, 5vw, 4rem);
 
 }
