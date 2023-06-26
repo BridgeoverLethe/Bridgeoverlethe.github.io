@@ -7,7 +7,7 @@ import { getCollection } from 'astro:content';
 import FormattedDate from '../components/FormattedDate.astro';
 const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
-).slice(3);
+).slice(0,3);
 
 ---
 
@@ -20,18 +20,16 @@ const posts = (await getCollection('blog')).sort(
 
 <body>
 <main>
-<div class="container">
-	<Nav>
-
+	<Nav></Nav>
 	<div class="landing-hook">
-	<h1>Have you ever wondered?</h1>
-		<ul>
-		<li>How the web became what it is?</li>
-		<li>What makes a healthy community?</li>
-		<li>What exactly happens in our shared information ecosystem?</li>
-		</ul>
+		<h1>Have you ever wondered?</h1>
+			
+			<h3>How the web became what it is?</h3>
+			<h3>What makes a healthy community?</h3>
+			<h3>What exactly happens in our shared information ecosystem?</h3>
+			
 	</div>
-
+	<div class="container">
 	<h2>Hi, I'm Nikhil</h2>
 
 	<p>I have been online since the 90s. In that span, I've been a forum admin, internet apocrypha collector, and a Reddit mod. My team has been featured in Time magazine and various newspapers.</p>
@@ -72,23 +70,25 @@ const posts = (await getCollection('blog')).sort(
 
 	<div>
 		<h1>Recent Blog Posts</h1>
-				<div class="grid">
-					
+		
+			<div class="grid">
+				
 								{
 									posts.map((post) => (
 									<div class="card">
 											<FormattedDate date={post.data.pubDate} />
 											<a href={`/blog/${post.slug}/`}>{post.data.title}</a>
-										</div>	
+								</div>	
 									))
 								}
-						
+				
 				  
 				</div>
 	  </div>
 			
 </div>
-		</main>
-		<Footer />
+
+</main>
 	</body>
+	<Footer />
 </html>

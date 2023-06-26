@@ -94,7 +94,7 @@ nav ul {
 	overflow-y: auto;
 	margin: 0;
 	padding: 0;
-	gap: 1em;
+	
 }
 nav ul li {
     background-color: #99b7bb;
@@ -104,7 +104,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: 0.1em;
     color: #252f38;
@@ -366,14 +366,72 @@ header {
   color: white;
 }
 
+
 .landing-hook{
+width: 100%;
 background-color: black;
 color: #fff;
-font-family: "Abril", "Georgia", "Times New Roman", cursive;
-font-size: clamp	(1.5rem, 5vw, 3rem);
+font-family: "Karla", sans-serif;
+font-size: 1rem;
+position: relative;
+border: 0;
+padding: 0;
 }
 
 .landing-hook h1{
-font-size: clamp (2rem, 5vw, 4rem);
-
+font-size: 5rem;
+text-align: center;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', serif;
 }
+
+.landing-hook h3 {
+	
+	position: relative;
+	margin-left: 25%;
+	width: 100%;
+	animation: fadeIn 5s;
+	-webkit-animation: fadeIn 5s; 
+	-moz-animation: fadeIn 5s;
+	-o-animation: fadeIn 5s;
+	-ms-animation: fadeIn 5s;
+	opacity: 0;
+}
+  
+.landing-hook h3:nth-child(1) {
+	animation-delay: 0s; /* Set delay for the first text item */
+  }
+  
+  .landing-hook h3:nth-child(2) {
+	animation-delay: 5s; /* Set delay for the second text item */
+  }
+  
+  .landing-hook h3:nth-child(3) {
+	animation-delay: 10s; /* Set delay for the third text item */
+  }
+  
+  @keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+	0% { opacity: 0; }
+  }
+  
+  @-moz-keyframes fadeIn {
+0% { opacity: 0; }
+	100% { opacity: 1; }
+	0% { opacity: 0; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }
