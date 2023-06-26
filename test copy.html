@@ -17,9 +17,9 @@
   --color-text: #93c2db;
   --color-light: #fff;
   --color-anchor: #93c2db;
-  --font-family: "Inter", sans-serif;
+  --font-family: "Abril Fatface", serif;
   --font-weight-strong: 600;
-  --font-size-h1: 3rem;
+  --font-size-h1: 7rem;
   --font-size-h2: 1.5rem;
   --font-size-h3: 1.6rem;
   --font-size-h4: 1.35rem;
@@ -127,13 +127,7 @@ main {
   margin-left: auto;
 }
 
-    .header {
-      background-color: #333;
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-    }
-
+   
     .hero {
      padding-top: 0.5em;
       background-size: cover;
@@ -177,45 +171,33 @@ main {
       margin-bottom: 40px;
     }
 
+    .hook {
+      background-color: #040404;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+      width: 100%;
+    
+    }
+    
+  .hook .container {
+    max-width: 60rem;
+    margin: 0 auto;
+    display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      gap: 1rem;
+}
   </style>
 </head>
+
 <body>
-  <header class="header">
-    <h1>Insanely Cool Blog</h1>
+  <header class="hook">
+    <div class="container">
+    <h1>Have you ever wondered</h1>
+  
+    <h3> how things got to this stage?</h3>
+  </div>
   </header>
 
-  <section class="hero">
-    <h1>Welcome to our Blog</h1>
-    <p>Discover amazing articles and insights</p>
-    <button class="cta-button">Explore Now</button>
-  </section>
-
-  <section class="blog-section">
-    <h2>Latest Articles</h2>
-
-    <div class="blog-post">
-      <img src="hero-banner.png" alt="Blog Post 1" width="20%" max-width ="4em">
-      <div>
-        <h3>Article Title 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet fermentum</p>
-      </div>
-    </div>
-
-    <div class="blog-post">
-      <img src="hero-banner.png" alt="Blog Post 2" alt="Blog Post 1" width="20%" max-width ="4em">
-      <div>
-        <h3>Article Title 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet fermentum</p>
-      </div>
-    </div>
-
-    <div class="blog-post">
-      <img src="hero-banner.png" alt="Blog Post 3" alt="Blog Post 1" width="20%" max-width ="4em">
-      <div>
-        <h3>Article Title 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet fermentum</p>
-      </div>
-    </div>
-  </section>
 </body>
 </html>
