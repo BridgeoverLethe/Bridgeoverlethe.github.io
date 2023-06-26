@@ -366,4 +366,15 @@ header {
   color: white;
 }
 
+.landing-hook{
+background-color: black;
+width: 60%;
+color: #fff;
+font-family: "Abril", cursive, sans-serif;
+font-size: 6rem;
+}
 
+.landing-hook h1{
+font-size: 25rem;
+
+}
