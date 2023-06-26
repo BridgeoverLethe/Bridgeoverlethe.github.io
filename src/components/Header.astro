@@ -1,47 +1,25 @@
-	---
+---
+import Nav from './Nav.astro';
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
-<header class="hero-image">
+<header class="header">
+	<Nav>
+
 	<div>
+
 		<h1>
 			{SITE_TITLE}
+			<HeaderLink>
+
 		</h1>
+		</div>
 
-		<nav class="headernav">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
-			<HeaderLink href="https://github.com/BridgeoverLethe" target="_blank">GitHub</HeaderLink>
-		</nav>
-	</div>
 </header>
-<style>
-	header {
-		text-align: center;
-		margin: 0em 0.5rem;
-		width: 100%;
-		padding: 0.5%;
-		height: auto;
-		}
-	
-	h1 {
-		font: 8em/1.2em 'Tajawal', sans-serif;
-		margin: 0.2em 0;
-		color: #edf1f8;
-		padding: 1%;
-	}
-	
-	Nav {
-		font-size: 3em;
-		text-align: center;
-		margin: 0em 0 0.5em;
-		background-color: #380c0c5d;
-		}
-	
-	a {
-		color : #ffffff;
-		}
 
+<style>
+	h1 {
+	font-size: clamp(2.5em, 5vw, 5em);
+		}
 </style>

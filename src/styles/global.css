@@ -3,86 +3,356 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
-body {
-	font-family: 'Tajawal', sans-serif;
-	font-size: 16px;
-	margin: auto;
-	/*padding: 5px;*/
+ @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Karla&display=swap");
+ :root {
+	 --width--container: 900px;
+	 font-size: 16px;
+ }
+ 
+
+ /*
+  * [Modified] Modern CSS Reset
+  * @link https://github.com/hankchizljaw/modern-css-reset
+ */
+ /* Box sizing rules */
+ *,
+ *::before,
+ *::after {
+	 -webkit-box-sizing: border-box;
+			 box-sizing: border-box;
+ }
+ 
+ /* Remove default margin */
+ body,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+	 margin: 0;
+	}
+ 
+ html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	} 
+	
+ 
+ /* Set core body defaults */
+ body {
+	 min-height: 25rem;
+	 font-size: 100%;
+	 line-height: 1.5;
+	 text-rendering: optimizeSpeed;
+	 --webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
+	 overflow-x: hidden;
+ }
+ 
+ /* Make images easier to work with */
+ img {
+	 display: block;
+	 max-width: 100%;
+	 margin: auto;
+ }
+ 
+ /* Inherit fonts for inputs and buttons */
+ input,
+ button,
+ textarea,
+ select {
+	 font: inherit;
+ }
+ 
+ /* Remove all animations and transitions for people that prefer not to see them */
+ @media (prefers-reduced-motion: reduce) {
+	 * {
+		 -webkit-animation-duration: 0.01ms !important;
+				 animation-duration: 0.01ms !important;
+		 -webkit-animation-iteration-count: 1 !important;
+				 animation-iteration-count: 1 !important;
+		 -webkit-transition-duration: 0.01ms !important;
+				 transition-duration: 0.01ms !important;
+		 scroll-behavior: auto !important;
+	 }
+ }
+ nav {
+	width: auto;
+	z-index: 1;
+	background-color: #99b7bb;
+	color: #252f38;
+	font-family: "Karla", sans-serif;
 	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	text-align: left;
-	background: #FEFEFE;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	line-height: 1.5;
-	color: #161C1B;
-	padding-bottom: 50px;
+	font-size: 18px;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+nav ul {
+
+	list-style: none;
+	display: flex;
+    justify-content: center; 
+	overflow-y: auto;
+	margin: 0;
+	padding: 0;
+	
+}
+nav ul li {
+    background-color: #99b7bb;
+	margin: 0 0.5em;
 }
 
-/* Style headings */
-h1, h2, h3, h4, h5, h6, strong {
-	color: #111111; /* darker shade of green */
-	font-family: 'Merriweather', sans-serif;
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: #252f38;
+    display: block;
+    
+}
+nav ul li a:hover,
+nav ul li a:focus {
+    border-left: solid 4px #edebe3;
+    border-bottom: 0;
 }
 
-b {
-	color:  #99f2c8;
-}
-a {
-	color:  #8796b6;
-}
-
-
-a:hover {
-	color: #73c2bb;
-  }
-nav a {
-	margin-right: 10px;
-}
-textarea {
-	width: 100%;
-	font-size: 16px;
-}
-input {
-	font-size: 16px;
-}
-content {
-	line-height: 1.6;
-}
-table {
-	width: 100%;
-}
-img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-}
-code {
-	padding: 2px 5px;
-	color: #DEEAEB;
-	background-color: #2E686F;
-}
-pre {
-	padding: 1rem;
-}
-pre > code {
-	all: unset;
-}
-blockquote {
-	border: 1px solid #4138c4;
-	color: #8ca4d8;
-	padding: 2px 0px 2px 20px;
-	margin: 0px;
-	font-style: italic;
-}
+ 
+header {
+	font-family: "Abril", "Georgia", "Times New Roman", cursive;
+	text-align: center;
+	font-size: clamp(1.5rem, 5vw, 3rem);
+	font-weight: normal;
+	position: relative;
+	grid-area: h1block;
+	background-color: #252f38;
+	color: #edebe3;
+	
+	}
+ 
+ @media screen and (max-width: 640px) {
+	 header {
+		 padding-top: 1.5rem;
+	 }
+	 header .container {
+		 max-width: 100%;
+		 padding-right: 60px;
+		 grid-template-areas: "h1block" "h2block" "space" "maintained" "github";
+		 grid-template-columns: auto;
+		 grid-template-rows: auto auto 4rem 2fr 1fr;
+	 }
+	 header .container h1 {
+		 font-size: 6rem;
+	 }
+ }
+ 
+ 
+ 
+ body {
+	 display: grid;
+	 grid-template-areas: "header header" "main main" "aside1 aside2" "footer footer";
+	 grid-template-columns: 1fr 1fr;
+ }
+ 
+ header a,
+ main a,
+ aside a,
+ footer a {
+	 text-decoration: none;
+	 color: #252f38;
+	 border-bottom: solid 2px #e2845b;
+	 -webkit-transition: all 0.3s ease-in-out;
+	 transition: all 0.3s ease-in-out;
+ }
+ header a svg,
+ main a svg,
+ aside a svg,
+ footer a svg {
+	 width: 0.8rem;
+	 height: 0.8rem;
+	 fill: #edebe3;
+	 margin-right: 5px;
+ }
+ header a:hover,
+ header a:focus,
+ main a:hover,
+ main a:focus,
+ aside a:hover,
+ aside a:focus,
+ footer a:hover,
+ footer a:focus {
+	 background-color: #e2845b;
+	 color: #252f38;
+ }
+ header a:hover svg,
+ header a:focus svg,
+ main a:hover svg,
+ main a:focus svg,
+ aside a:hover svg,
+ aside a:focus svg,
+ footer a:hover svg,
+ footer a:focus svg {
+	 fill: #e2845b;
+ }
+ 
+ header {
+	 grid-area: header;
+ }
+ 
+ main {
+	 grid-area: main;
+	 margin: 0;
+	 padding: 0;
+ }
+ 
+ footer.page-footer {
+	 grid-area: footer;
+	 background-color: #252f38;
+	 color: #edebe3;
+ }
+ footer.page-footer a {
+	 color: #edebe3;
+ }
+ footer.page-footer a:hover,
+ footer.page-footer a:focus {
+	 color: #252f38;
+ }
+ footer.page-footer .container {
+	 max-width: var(--width--container);
+	 margin: 0 auto;
+	 padding: 1.5rem;
+	 font-size: 1rem;
+ }
+ footer.page-footer ul {
+	 list-style: none;
+	 margin: 0 -5px;
+	 padding: 0;
+	 display: -webkit-box;
+	 display: -ms-flexbox;
+	 display: flex;
+	 -webkit-box-align: center;
+		 -ms-flex-align: center;
+			 align-items: center;
+	 -ms-flex-wrap: wrap;
+		 flex-wrap: wrap;
+ }
+ footer.page-footer ul li {
+	 -webkit-box-flex: 1;
+		 -ms-flex: 1;
+			 flex: 1;
+	 margin: 5px;
+	 text-align: center;
+ }
+ footer.page-footer ul li a {
+	 display: inline-block;
+	 color: #252f38;
+	 font-weight: bold;
+	 white-space: nowrap;
+	 background-color: #e2845b;
+	 border: solid 2px #e2845b;
+	 padding: 8px 20px;
+	 text-align: center;
+	 width: 100%;
+ }
+ footer.page-footer ul li a:hover,
+ footer.page-footer ul li a:focus {
+	 background-color: transparent;
+ }
+ footer.page-footer ul li a:hover,
+ footer.page-footer ul li a:focus {
+	 color: #edebe3;
+ }
+ 
+ .skip-link {
+	 position: absolute;
+	 top: auto;
+	 left: -10000px;
+	 width: 1px;
+	 height: 1px;
+	 overflow: hidden;
+	 background-color: #e2845b;
+	 border: solid 2px #e2845b;
+	 color: #252f38;
+	 font-size: 1.125rem;
+	 font-weight: bold;
+	 white-space: nowrap;
+	 padding: 8px 20px;
+	 text-align: center;
+	 text-decoration: none;
+ }
+ .skip-link:focus {
+	 position: fixed;
+	 top: 4rem;
+	 left: 1rem;
+	 width: auto;
+	 height: auto;
+	 display: inline-block;
+	 z-index: 12;
+ }
+ 
+ @media screen and (max-width: 640px) {
+	 body {
+		 grid-template-areas: "header" "main" "aside2" "aside1" "footer";
+		 grid-template-columns: 1fr;
+	 }
+  	 footer.page-footer .container {
+		 max-width: 100%;
+		 padding-right: 60px;
+	 }
+ 
+	 .skip-link:focus {
+		 top: 1rem;
+	 }
+ }
+ @media screen and (max-width: 900px) {
+	 article:not(:last-child):after {
+		 left: calc(35vw - 30px);
+	 }
+ }
+ body {
+	 font-family: "Karla", sans-serif;
+	 font-size: 1rem;
+	 background-color: #11305f;
+	 color: #ffffff;
+	 padding-bottom: 2em;
+ }
 
 .container { 
 	 max-width: 50rem;
 	 position: relative;
 	 margin: auto;
 	 padding: 1%;
+	 color: #3A6EA5;
+	 background-color: #FFFFFF;
+	 padding: 1rem;
 }
+
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(auto, 1fr));
+	grid-gap: 20px;
+ }
+  
+  .card {
+	background-color: #fff;
+	border-radius: 5px;
+	border: 2px solid  #11305f;;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	display: grid;
+	max-width: 20rem;
+	flex-wrap: hidden;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	margin: 1rem;
+}
+  
+  
 .hero-image {
   background-image: url("../../public/hero-banner-stretch.jpg");
   background-color: #22080860;
@@ -101,3 +371,96 @@ blockquote {
 }
 
 
+.landing-hook{
+width: 100%;
+background-color: black;
+color: #fff;
+font-family: "Karla", sans-serif;
+font-size: 1rem;
+position: relative;
+border: 0;
+padding: 0;
+}
+
+.landing-hook h1{
+width: auto;
+font-size: clamp(4rem, 6vw, 6rem);
+text-align: center;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', serif;
+}
+
+.landing-hook h3 {
+	font-size: clamp(0.5rem, 3vw, 1rem);
+	position: relative;
+	margin-left: 25%;
+	width: auto;
+	animation: fadeIn 5s;
+	-webkit-animation: fadeIn 5s; 
+	-moz-animation: fadeIn 5s;
+	-o-animation: fadeIn 5s;
+	-ms-animation: fadeIn 5s;
+	opacity: 0;
+}
+ 
+.landing-hook h2 {
+	font-size: clamp(1rem, 3vw, 2rem);
+	position: relative;
+	margin-left: 25%;
+	width: auto;
+	animation: fadeIn 5s;
+	-webkit-animation: fadeIn 5s; 
+	-moz-animation: fadeIn 5s;
+	-o-animation: fadeIn 5s;
+	-ms-animation: fadeIn 5s;
+	text-align: center; 
+	margin: 0; 
+	color: #F5CB5C;
+	padding: 1rem;
+	
+}
+
+
+.landing-hook h3:nth-child(1) {
+	animation-delay: 0s; /* Set delay for the first text item */
+  }
+  
+  .landing-hook h3:nth-child(2) {
+	animation-delay: 5s; /* Set delay for the second text item */
+  }
+  
+  .landing-hook h3:nth-child(3) {
+	animation-delay: 10s; /* Set delay for the third text item */
+	  }
+
+  .landing-hook h2:nth-child(1) {
+	animation-delay: 16s; /* Set delay for the third text item */
+	  }
+ 
+ 
+   
+  @keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+
+  }
+  
+  @-moz-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+
+  }
+  
+  @-webkit-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }

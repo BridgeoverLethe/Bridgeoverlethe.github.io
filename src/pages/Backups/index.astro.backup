@@ -1,0 +1,74 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getCollection } from 'astro:content';
+const posts = (await getCollection('blog')).sort(
+	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+
+		 <Header title={SITE_TITLE} /> 
+		
+		
+		 <main>
+			<div class="container">
+				<h1>Hi!</h1>
+				<p>
+					I'm Nikhil. I'd love to tell you who I am in a nutshell, but that covers:
+				</p>
+				<ul>
+					<li>Trust and Safety person</li>
+					<li>Ex mod</li>
+					<li>Data person</li>
+					<li>Project manager</li>
+					<li>Six Sigma survivor</li>
+					<li>2008 financial <i>startup</i> veteran (Hey TVFS!)</li>
+					<li>Coffee <strike> addict</strike> person </li>
+				</ul>
+				
+				
+				<p>
+					And this is what I can remember at 12:30 am.
+
+				</p>
+				
+				<p><h2>However, </h2>
+					
+					The one thing I spend my time on near constantly, is on thinking about how online communities, their health and understanding them.
+
+				<p>	Yes yes, this is a personal website, and of course there has to be one of those really great tag lines. </p>				
+
+				
+				<p>
+					In this case, its true. I have a mid 5 digit slashdot account number somewhere. As a teen I found stories about Eternal September to be fascinating, the first theft in a video game, the outrage in the WoW Shaman Forums.
+				</p>
+				<p> More pertinently, I've been:
+					<ul> 
+						<li>Forum admin </li>
+						<li>Reddit mod (2003 - 2018 active)</li>
+						<li>Reddit LIA (2022)</li>
+					</ul>	
+				</p>		
+			
+			<p>
+			I turned my MBA disseration into a chance to study the impact of community rule changes on user behavior.
+
+			I wouldnt be happy if I wasnt working on it.
+			</p>
+					
+              
+			
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
