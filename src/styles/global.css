@@ -99,11 +99,11 @@
  nav {
 	width: 100%;
 	z-index: 1;
-	background-color: var(--color-grey);
-	color: var(--color-text);
+	background-color: var(--color-secondary);
+	color: var(--color-light);
 	font-family: var(--font-family);
 	display: flex;
-	font-size: 18px;
+	font-size: 1.5rem;
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: center;
@@ -115,11 +115,11 @@ nav ul {
     justify-content: center; 
 	overflow-y: auto;
 	margin: 0;
-	padding: 0;
+	padding: 0.2rem;
 	
 }
-nav ul li {
-    background-color: var(--color-grey);
+nav ul li a{
+    background-color: var(--color-secondary);
 	margin: 0 0.5em;
 }
 
@@ -129,7 +129,7 @@ nav ul li a {
     font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: 0.1em;
-    color: #252f38;
+    color: var(--color-light);
     display: block;
     
 }

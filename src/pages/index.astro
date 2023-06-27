@@ -1,4 +1,4 @@
----
+7---
 import BaseHead from "../components/BaseHead.astro";
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
@@ -32,20 +32,21 @@ const posts = (await getCollection("blog"))
 						<li>What about languages without massive data sets?</li>
 						<li>What date is the Spam apocalypse?</li>
 						<li>What makes a healthy community?</li>
-						<li style="color: lightblue">How terrible would life be, without coffee?</li>
+						<li style="color: rgb(255, 204, 197)">Could I survive without coffee?</li>
 					</ul>
 				</div>
 			</div>
 			<div class="container">
-				<h1>Hi, I'm Nikhil</h1>
+				<h1 style="color: var(--color-secondary)">Hi, I'm Nikhil</h1>
 
-				<h3>
-					I have been online since the 90s. I've been a forum admin,
-					national video game finalist, Reddit mod.
-					One of those teams has been featured in Time magazine.
-				</h3>
+				<h4>
+					I've been a forum admin, clan leader, subreddit mod,
+					national video game finalist, and journeyman coffee snob.
+					One of these has been featured in Time magazine.
+				</h4>
 
-				<p>I have also:</p>
+				<p>
+					I have also:</p>
 				<ul>
 					<li>
 						Been a 2008 vintage financial startup enthusiast (2nd
@@ -129,7 +130,7 @@ const posts = (await getCollection("blog"))
 				<p>- Nik</p>
 
 				<div>
-					<h1>Recent Blog Posts</h1>
+					<h1 style="text-align:center;">Recent Blog Posts</h1>
 
 					<div class="grid">
 						{
