@@ -404,8 +404,8 @@ header {
 
 .grid {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(auto, 1fr));
-	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+	grid-gap: 1rem;
  }
   
   .card {

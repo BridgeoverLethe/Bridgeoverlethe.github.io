@@ -5,6 +5,7 @@ pubDate: Jun 27 2022
 share: "true"
 tags: ["llm", "gpt", "code", "dumb", "projects"]
 slug: maketh-thine-site
+heroImage: "/hero-banner-stretch.jpg"
 ---
 ## Why, oh why did I do this?
 

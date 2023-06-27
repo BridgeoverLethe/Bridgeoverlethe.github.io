@@ -19,52 +19,54 @@ const posts = (await getCollection("blog"))
 	<body>
 		<main>
 			<Nav />
+			
 			<header class="landing-hook">
 				<h1>Have you ever wondered?</h1>
 			</header>
+			<div class="container"> 
 			<div class="landing-hook">
 				<ul>
 					<li>How the web became what it is?</li>
-					<li>
-						What exactly happens in our shared information
-						ecosystem?
-					</li>
+					<li>How should we measure moderation?</li>
+					<li>What, exactly, is an 'information ecosystem'?</li>
+					<li>What about languages without massive data sets?</li>
+					<li>What date is the Spam apocalypse?</li>
 					<li>What makes a healthy community?</li>
 				</ul>
 			</div>
+			</div>
 			<div class="container">
-				<h2>Hi, I'm Nikhil</h2>
+				<h1>Hi, I'm Nikhil</h1>
 
 				<p>
-					I have been online since the 90s. In that span, I've been a
-					forum admin, internet apocrypha collector, and a Reddit mod.
-					My team has been featured in Time magazine and various
-					newspapers.
+					I have been online since the 90s. I've been a
+					forum admin, National video game finalist, Reddit mod, talkcity veteran.
+					One of those teams has been featured in Time magazine.
 				</p>
 
-				<p>At the same time, I have:</p>
+				<p>I have also:</p>
 				<ul>
 					<li>
-						Been a financial startup baby (2nd round of hires, 2008
-						vintage... yaay).
+						Been a 2008 vintage financial startup enthusiast (2nd round of hires).
 					</li>
 					<li>
 						Picked up a data science degree and an MBA (COVID
-						vintage, yaayx2) and the ability to figure out paths
-						where none have existed before.
+						vintage!). 
 					</li>
 				</ul>
 
 				<p>
-					I've worked in startups, large firms, and volunteer groups,
-					across cultures, work environments, and mediums.
+					I've worked in small lean teams, complex large firms, driven volunteer groups, across cultures, values and  geographies.
 				</p>
 
-				<p>The single thing that ties them together is this:</p>
 
-				<h2>I want to understand how healthy communities function.</h2>
 
-				<h3>It's what I think about, all the time.</h3>
+				<p>To make sense of all of this, there is one thing to know about me: </p>
+
+				<h1 style="color: var(--color-secondary); text-align: center;">I want to understand how we build healthy communities online</h1>
+
+				<p></p>
+				<h4>It's what I think about, all the time.</h4>
 
 				<p>
 					It's why I used my MBA dissertation to take a data-driven
@@ -113,10 +115,10 @@ const posts = (await getCollection("blog"))
 						{
 							posts.map((post) => (
 								<div class="card">
-									<FormattedDate date={post.data.pubDate} />
-									<a href={`/blog/${post.slug}/`}>
-										{post.data.title}
-									</a>
+									<h3 class="landing-hook"><a href={`/blog/${post.slug}/`}>{post.data.title}</a></h3>
+								<description>{post.data.description} </description>
+								<FormattedDate date={post.data.pubDate} />
+	
 								</div>
 							))
 						}
