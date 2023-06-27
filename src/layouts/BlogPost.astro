@@ -1,40 +1,25 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
+import type { CollectionEntry } from "astro:content";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import FormattedDate from "../components/FormattedDate.astro";
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<"blog">["data"];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
 <html lang="en">
-	<head>
-		<BaseHead title={title} description={description} />
-		<Header>
-		<style>
-			.title {
-				font-size: 2em;
-				margin: 0.25em 0 0;
-			}
-			hr {
-				border-top: 1px solid #ddd;
-				margin: 1rem 0;
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-		</style>
-	</head>
+	<BaseHead title={title} description={description} />
+	<Header />
+
 
 	<body>
-		
 		<main>
 			<div class="container">
-			
-				<img src={heroImage} alt="" width="auto"/>
+				<img src={heroImage} alt="" width="auto" />
 				<h1 class="title">{title}</h1>
 				<FormattedDate date={pubDate} />
 				{
@@ -46,9 +31,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				}
 				<hr />
 				<slot />
-			
-		</div>
+			</div>
 		</main>
+
 		<Footer />
 	</body>
 </html>

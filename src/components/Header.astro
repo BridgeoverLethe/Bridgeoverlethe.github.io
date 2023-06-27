@@ -1,25 +1,19 @@
 ---
-import Nav from './Nav.astro';
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import Nav from "./Nav.astro";
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
 ---
 
 <header class="header">
-	<Nav>
+<body>
+	<Nav></Nav>
 
 	<div>
-
+		
 		<h1>
 			{SITE_TITLE}
-			<HeaderLink>
-
 		</h1>
-		</div>
+
+	</div>
 
 </header>
-
-<style>
-	h1 {
-	font-size: clamp(2.5em, 5vw, 5em);
-		}
-</style>

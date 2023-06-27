@@ -1,18 +1,16 @@
 ---
-title: "Maketh Not Thine Own Site"
-description: "Just dont do this"
-pubDate: "Jul 27 2022"
+title: Maketh Not Thine Own Site
+description: Just dont do this
+pubDate: Jul 27 2022
 share: "true"
+tags: ["llm", "gpt", "code", "dumb", "projects"]
+slug: maketh-thine-site
 ---
-
-#llm #gpt #code #dumb #projects
-
-
 ## Why, oh why did I do this?
 
-I love code. You write words and things happen.  Its essentially magic. 
+I love code. You write words and things happen.  Its essentially magic.
 
-Then there is learning how to make this website. This involved sacrifices to Eldritch Beings. 
+Then there is learning how to make this website. This involved sacrifices to Eldritch Beings.
 
 Lets do this story style.
 
@@ -20,17 +18,15 @@ Being able to understand something means being aware of its limits. GenAI is fun
 
 Part of that, was building my personal website.
 
-The last time I looked at website code intently was before CSS existed. 
+The last time I looked at website code intently was before CSS existed.
 
-Overly ambitious isn't the half of it.
-
-
+Overly ambitious isnt the half of it.
 
 ### Mistake 2: Listen to an Expert
 
 On May 31st, I reached out to a friend and  asked him " If you were to start out today, what would you choose to learn?."
 
-His suggestions: 
+His suggestions:
 - Astro
 - Vercel
 

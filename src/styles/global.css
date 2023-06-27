@@ -11,6 +11,7 @@
   --color-primary: #292b2c;
   --color-primary-alt: #f44336;
   --color-secondary: #0275d8;
+  --color-orange: #e2845b;
   --color-background: #f6f6f6;
   --color-grey: #8d8d8d;
   --color-text: #1a252a;
@@ -96,7 +97,7 @@
 	 }
  }
  nav {
-	width: auto;
+	width: 100%;
 	z-index: 1;
 	background-color: var(--color-grey);
 	color: var(--color-text);
@@ -146,7 +147,7 @@ header {
 	min-height: 4rem;
 	font-family: var(--font-family);
 	text-align: center;
-	padding: 7vh 2rem;
+	/* padding: 7vh 2rem;*/
 	font-weight: normal;
 	position: relative;
 	grid-area: h1block;
@@ -158,7 +159,7 @@ header {
 	
  @media screen and (max-width: 640px) {
 	 header {
-		 padding-top: 1.5rem;
+		 /* padding-top: 1.5rem;*/
 	 }
 	 header .container {
 		 max-width: 100%;
@@ -174,6 +175,7 @@ header {
  
  .landing-hook  {
 	position: relative;
+	color: var(--color-light);
   }
   
   header h1 {
@@ -211,11 +213,11 @@ header {
   .landing-hook ul li {
 	margin: 0.25em;
 	padding: 0.25em 0.5em;
-	background-color: #11305f;
+	background-color: var(--color-secondary);
   }
   
   .landing-hook  ul li:hover {
-	background-color: var(--color-secondary);
+	background-color: var(--color-orange);
 	color: var(--color-light);
   }
  
