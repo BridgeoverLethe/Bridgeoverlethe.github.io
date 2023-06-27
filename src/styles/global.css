@@ -140,10 +140,13 @@ nav ul li a:focus {
 
  
 header {
-	
+	--logomark-height: 1.7em;
+	--logomark-padding: 0 0.5em;
+	display: grid;
+	min-height: 4rem;
 	font-family: var(--font-family);
 	text-align: center;
-	font-size: clamp(1rem, 5vw, 1.5rem);
+	padding: 7vh 2rem;
 	font-weight: normal;
 	position: relative;
 	grid-area: h1block;
@@ -173,15 +176,19 @@ header {
 	position: relative;
   }
   
-  .landing-hook  h1{
-	font-size: 5rem;
+  header h1 {
+	display: inline-grid;
+	min-height: var(--logomark-height);
+	padding: var(--logomark-padding);
+	font-size: clamp(3rem, 6vw, 6rem);
+	place-content: center;
   }
   .landing-hook  p {
 	-ms-flex-item-align: center;
 		align-self: center;
 	margin-top: 2rem;
 	color: var(--color-secondary);
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	font-weight: var(--font-weight-strong);
 	color: var(--color-light);
 	text-align: center;
