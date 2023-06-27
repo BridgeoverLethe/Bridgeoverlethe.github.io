@@ -1,4 +1,3 @@
-
 ---
 title: "Maketh Not Thine Own Site"
 description: "Just dont do this"
