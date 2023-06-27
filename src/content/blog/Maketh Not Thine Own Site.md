@@ -2,7 +2,7 @@
 ---
 title: "Maketh Not Thine Own Site"
 description: "Just dont do this"
-pubDate: "27 Jun 2023"
+pubDate: "2023-06-27 18:06:45 UTC"
 share: "true"
 ---
 
