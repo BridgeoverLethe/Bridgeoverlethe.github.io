@@ -1,7 +1,7 @@
 ---
-title: "Second post"
-description: "Lorem ipsum dolor sit amet"
-pubDate: "Jul 22 2022"
+title: "Another second post"
+description: ""
+pubDate: "2023-06-27"
 share: "true"
 heroImage: "/hero-banner.png"
 ---
