@@ -4,10 +4,27 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
  @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Karla&display=swap");
+
+
+ 
  :root {
-	 --width--container: 900px;
-	 font-size: 16px;
- }
+  --color-primary: #292b2c;
+  --color-primary-alt: #f44336;
+  --color-secondary: #0275d8;
+  --color-background: #f6f6f6;
+  --color-grey: #8d8d8d;
+  --color-text: #1a252a;
+  --color-light: #fff;
+  --color-anchor: #292b2c;
+  --font-family: "Roboto", sans-serif;
+  --font-weight-strong: 500;
+  --font-size-h1: 6rem;
+  --font-size-h2: 3rem;
+  --font-size-h3: 2rem;
+  --font-size-h4: 1.35rem;
+  --font-size-text: 1.15rem;
+  --border-radius: 8px;
+}
  
 
  /*
@@ -48,7 +65,8 @@
 	 --webkit-font-smoothing: antialiased;
 	 -moz-osx-font-smoothing: grayscale;
 	 overflow-x: hidden;
- }
+	 font-family: var(--font-family);
+	}
  
  /* Make images easier to work with */
  img {
@@ -80,9 +98,9 @@
  nav {
 	width: auto;
 	z-index: 1;
-	background-color: #99b7bb;
-	color: #252f38;
-	font-family: "Karla", sans-serif;
+	background-color: var(--color-grey);
+	color: var(--color-text);
+	font-family: var(--font-family);
 	display: flex;
 	font-size: 18px;
 	flex-wrap: wrap;
@@ -90,7 +108,7 @@
 	justify-content: center;
 }
 nav ul {
-
+	text-decoration: none;
 	list-style: none;
 	display: flex;
     justify-content: center; 
@@ -100,7 +118,7 @@ nav ul {
 	
 }
 nav ul li {
-    background-color: #99b7bb;
+    background-color: var(--color-grey);
 	margin: 0 0.5em;
 }
 
@@ -116,23 +134,25 @@ nav ul li a {
 }
 nav ul li a:hover,
 nav ul li a:focus {
-    border-left: solid 4px #edebe3;
+    border-left: solid 4px var(--color-light);
     border-bottom: 0;
 }
 
  
 header {
-	font-family: "Abril", "Georgia", "Times New Roman", cursive;
+	
+	font-family: var(--font-family);
 	text-align: center;
-	font-size: clamp(1.5rem, 5vw, 3rem);
+	font-size: clamp(1rem, 5vw, 1.5rem);
 	font-weight: normal;
 	position: relative;
 	grid-area: h1block;
-	background-color: #252f38;
-	color: #edebe3;
-	
+	background-color: var(--color-primary);
+	color: var(--color-light);
 	}
- 
+
+	
+	
  @media screen and (max-width: 640px) {
 	 header {
 		 padding-top: 1.5rem;
@@ -145,11 +165,54 @@ header {
 		 grid-template-rows: auto auto 4rem 2fr 1fr;
 	 }
 	 header .container h1 {
-		 font-size: 6rem;
+		 font-size: 3rem;
 	 }
  }
  
+ .landing-hook  {
+	position: relative;
+  }
+  
+  .landing-hook  h1{
+	font-size: 5rem;
+  }
+  .landing-hook  p {
+	-ms-flex-item-align: center;
+		align-self: center;
+	margin-top: 2rem;
+	color: var(--color-secondary);
+	font-size: 1.5em;
+	font-weight: var(--font-weight-strong);
+	color: var(--color-light);
+	text-align: center;
+  }
+  
+  .landing-hook ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	margin: 1rem 0 2rem;
+	padding: 0;
+	list-style: none;
+  }
+  
+  .landing-hook ul li {
+	margin: 0.25em;
+	padding: 0.25em 0.5em;
+	background-color: #11305f;
+  }
+  
+  .landing-hook  ul li:hover {
+	background-color: var(--color-secondary);
+	color: var(--color-light);
+  }
  
+   
  
  body {
 	 display: grid;
@@ -163,7 +226,7 @@ header {
  footer a {
 	 text-decoration: none;
 	 color: #252f38;
-	 border-bottom: solid 2px #e2845b;
+	 border-bottom: solid 2px var(--color-secondary);
 	 -webkit-transition: all 0.3s ease-in-out;
 	 transition: all 0.3s ease-in-out;
  }
@@ -313,10 +376,9 @@ header {
 	 }
  }
  body {
-	 font-family: "Karla", sans-serif;
-	 font-size: 1rem;
-	 background-color: #11305f;
-	 color: #ffffff;
+	 
+	 background-color: var(--color-background);
+	 color: var(--color-text);
 	 padding-bottom: 2em;
  }
 
@@ -325,8 +387,8 @@ header {
 	 position: relative;
 	 margin: auto;
 	 padding: 1%;
-	 color: #3A6EA5;
-	 background-color: #FFFFFF;
+	 color: var(--color-text);
+	 background-color: var(--color-background);
 	 padding: 1rem;
 }
 
@@ -371,96 +433,3 @@ header {
 }
 
 
-.landing-hook{
-width: 100%;
-background-color: black;
-color: #fff;
-font-family: "Karla", sans-serif;
-font-size: 1rem;
-position: relative;
-border: 0;
-padding: 0;
-}
-
-.landing-hook h1{
-width: auto;
-font-size: clamp(4rem, 6vw, 6rem);
-text-align: center;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', serif;
-}
-
-.landing-hook h3 {
-	font-size: clamp(0.5rem, 3vw, 1rem);
-	position: relative;
-	margin-left: 25%;
-	width: auto;
-	animation: fadeIn 5s;
-	-webkit-animation: fadeIn 5s; 
-	-moz-animation: fadeIn 5s;
-	-o-animation: fadeIn 5s;
-	-ms-animation: fadeIn 5s;
-	opacity: 0;
-}
- 
-.landing-hook h2 {
-	font-size: clamp(1rem, 3vw, 2rem);
-	position: relative;
-	margin-left: 25%;
-	width: auto;
-	animation: fadeIn 5s;
-	-webkit-animation: fadeIn 5s; 
-	-moz-animation: fadeIn 5s;
-	-o-animation: fadeIn 5s;
-	-ms-animation: fadeIn 5s;
-	text-align: center; 
-	margin: 0; 
-	color: #F5CB5C;
-	padding: 1rem;
-	
-}
-
-
-.landing-hook h3:nth-child(1) {
-	animation-delay: 0s; /* Set delay for the first text item */
-  }
-  
-  .landing-hook h3:nth-child(2) {
-	animation-delay: 5s; /* Set delay for the second text item */
-  }
-  
-  .landing-hook h3:nth-child(3) {
-	animation-delay: 10s; /* Set delay for the third text item */
-	  }
-
-  .landing-hook h2:nth-child(1) {
-	animation-delay: 16s; /* Set delay for the third text item */
-	  }
- 
- 
-   
-  @keyframes fadeIn {
-	0% { opacity: 0; }
-	100% { opacity: 1; }
-
-  }
-  
-  @-moz-keyframes fadeIn {
-	0% { opacity: 0; }
-	100% { opacity: 1; }
-
-  }
-  
-  @-webkit-keyframes fadeIn {
-	0% { opacity: 0; }
-	100% { opacity: 1; }
-  }
-  
-  @-o-keyframes fadeIn {
-	0% { opacity: 0; }
-	100% { opacity: 1; }
-  }
-  
-  @-ms-keyframes fadeIn {
-	0% { opacity: 0; }
-	100% { opacity: 1; }
-  }

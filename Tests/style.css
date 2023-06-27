@@ -322,6 +322,31 @@ nav ul li {
   margin: 0.25rem;
 }
 
+#guidelines h3 {
+  display: inline-block;
+  background: #292b2c;
+}
+@supports ((-webkit-background-clip: text) or (background-clip: text)) or (-webkit-background-clip: text) {
+  #guidelines h3 {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+#guidelines h3:hover {
+  -webkit-transform: rotate(-8deg) translateX(-30%);
+          transform: rotate(-8deg) translateX(-30%);
+}
+@supports ((-webkit-background-clip: text) or (background-clip: text)) or (-webkit-background-clip: text) {
+  #guidelines p:nth-of-type(2) {
+    position: relative;
+  }
+}
+#guidelines .container > a {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
 #about section:nth-child(2) {
   position: relative;
 }
@@ -356,11 +381,6 @@ nav ul li {
   background-color: var(--color-light);
 }
 
-#about section:nth-child(2) ul li:hover {
-  background-color: var(--color-secondary);
-  color: var(--color-light);
-}
-
 #about section:nth-child(2)::before {
   position: absolute;
   top: 60%;
@@ -386,32 +406,6 @@ nav ul li {
             transform: scale(2) translate(-25%, -25%);
   }
 }
-#guidelines h3 {
-  display: inline-block;
-  background: #292b2c;
-}
-@supports ((-webkit-background-clip: text) or (background-clip: text)) or (-webkit-background-clip: text) {
-  #guidelines h3 {
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-}
-#guidelines h3:hover {
-  -webkit-transform: rotate(-8deg) translateX(-30%);
-          transform: rotate(-8deg) translateX(-30%);
-}
-@supports ((-webkit-background-clip: text) or (background-clip: text)) or (-webkit-background-clip: text) {
-  #guidelines p:nth-of-type(2) {
-    position: relative;
-  }
-}
-#guidelines .container > a {
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-
-
 #files {
   display: grid;
   place-content: center;

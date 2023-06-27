@@ -21,14 +21,18 @@ const posts = (await getCollection('blog')).sort(
 <body>
 <main>
 	<Nav></Nav>
-	<div class="landing-hook">
+	<header class="landing-hook">
+	
 		<h1>Have you ever wondered?</h1>
-			
-			<h3>How the web became what it is?</h3>
-			<h2>What exactly happens in our shared information ecosystem?
-			<h3>What makes a healthy community?</h3>
-			
-	</div>
+	<p>
+		<ul>
+			<li>How the web became what it is?</li>
+			<li>What exactly happens in our shared information ecosystem?</li>
+			<li>What makes a healthy community?</li>
+		</ul>	
+	</p>
+	</header>
+
 	<div class="container">
 	<h2>Hi, I'm Nikhil</h2>
 
@@ -36,8 +40,8 @@ const posts = (await getCollection('blog')).sort(
 
 	<p>At the same time, I have:</p>
 	<ul>
-	<li>Been a financial startup baby (2nd round of hires, 2008 vintage... yaay).</li>
-	<li>Picked up a data science degree and an MBA (COVID vintage, yaayx2) and the ability to figure out paths where none have existed before.</li>
+		<li>Been a financial startup baby (2nd round of hires, 2008 vintage... yaay).</li>
+		<li>Picked up a data science degree and an MBA (COVID vintage, yaayx2) and the ability to figure out paths where none have existed before.</li>
 	</ul>
 
 	<p>I've worked in startups, large firms, and volunteer groups, across cultures, work environments, and mediums.</p>
