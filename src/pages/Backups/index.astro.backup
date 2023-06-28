@@ -72,3 +72,57 @@ const posts = (await getCollection('blog')).sort(
 		<Footer />
 	</body>
 </html>
+
+
+
+<p></p>
+				<h4>It's what I think about, all the time.</h4>
+
+				<p>
+					We live in an era of unprecedented data and computationally
+					power. We have the data and ability to understand how the
+					ideas that move us, move through us.
+				</p>
+				<p>
+					Yet, there are far too many times that mod teams work in the
+					dark, never knowing how their actions impacted their
+					communities.
+				</p>
+
+				<p>
+					This question plagued me enough, that I retiurned to code,
+					got my data science creds, and then used my MBA dissertation
+					to take a data-driven look at how subreddit behavior was
+					impacted by rule changes.
+				</p>
+
+				<p>
+					It's why I work at Genpact in their Trust and Safety
+					sdivision.
+				</p>
+
+				<p>
+					The core topic I am working towards is bridging the language
+					resource gap.
+				</p>
+
+				<p>
+					The reason I work with Gen AI is to understand and apply it
+					effectively. This site wouldn't exist if it weren't for the
+					accelerated learning that it enabled. Side note - don't try
+					and write code from scratch.
+				</p>
+
+				<p>I want to make things better.</p>
+				<p>I want to do it correctly.</p>
+				<p>I want to do it effectively.</p>
+
+				<p>
+					My background allows me to talk to almost everyone (family
+					disagrees, but let's just ignore them).
+				</p>
+
+				<p>
+					If this is what you think about, I'd love to talk to you and
+					hear your thoughts.
+				</p>

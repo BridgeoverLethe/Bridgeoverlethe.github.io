@@ -1,4 +1,4 @@
-7---
+---
 import BaseHead from "../components/BaseHead.astro";
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
@@ -32,124 +32,62 @@ const posts = (await getCollection("blog"))
 						<li>What about languages without massive data sets?</li>
 						<li>What date is the Spam apocalypse?</li>
 						<li>What makes a healthy community?</li>
-						<li style="color: rgb(255, 204, 197)">Could I survive without coffee?</li>
+						<li
+							style="color: rgb(255, 204, 197)"
+							class="fa fa-coffee"
+						>
+							Could I survive without coffee?
+						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="container">
-				<h1 style="color: var(--color-secondary)">Hi, I'm Nikhil</h1>
-
-				<h4>
-					I've been a forum admin, clan leader, subreddit mod,
-					national video game finalist, and journeyman coffee snob.
-					One of these has been featured in Time magazine.
-				</h4>
-
-				<p>
-					I have also:</p>
-				<ul>
-					<li>
-						Been a 2008 vintage financial startup enthusiast (2nd
-						round of hires).
-					</li>
-					<li>
-						Picked up an MBA (COVID vintage!).
-					</li>
-				</ul>
-
-				<p>
-					I've worked in small lean teams, complex large firms, driven
-					volunteer groups, across cultures, values and geographies.
-				</p>
-
-				<p>
-					To make sense of all of this, just know:
-					
-				</p>
-
-				<h1 style="color: var(--color-secondary); text-align: center;">
-					I want to help communities flourish and stay healthy online.
+				<h1 style="color: var(--color-secondary)">
+					Hi, I'm Nik. I think about these things all the time.
 				</h1>
 
-				<p></p>
-				<h4>It's what I think about, all the time.</h4>
+				<h4>
+					I am focused on our health, safety and ability to thrive
+					online communities. I've been on the front lines as a
+					moderator, I use data to drive my decisions (My Disseration
+					tried to measure moderation). Now, I'm applying my skills in
+					Trust and Safety at Genpact.
+				</h4>
+			</div>
 
-				<p>
-					We live in an era of unprecedented data and computationally
-					power. We have the data and ability to understand how the
-					ideas that move us, move through us.
-				</p>
-				<p>
-					Yet, there are far too many times that mod teams work in the
-					dark, never knowing how their actions impacted their
-					communities.
-				</p>
+			<h1 style="color: var(--color-secondary); text-align: center;">
+				I want to help communities flourish and stay healthy online.
+			</h1>
 
-				<p>
-					This question plagued me enough, that I retiurned to code,
-					got my data science creds, and then used my MBA dissertation
-					to take a data-driven look at how subreddit behavior was
-					impacted by rule changes.
-				</p>
+			<p>If these topics interest you, lets chat!</p>
 
-				<p>
-					It's why I work at Genpact in their Trust and Safety
-					sdivision.
-				</p>
+			<p>You can reach me <a href="https://in.linkedin.com/in/nikhil-bhasin">here:</a></p>
 
-				<p>
-					The core topic I am working towards is bridging the language
-					resource gap.
-				</p>
+			<p>- Nik</p>
 
-				<p>
-					The reason I work with Gen AI is to understand and apply it
-					effectively. This site wouldn't exist if it weren't for the
-					accelerated learning that it enabled. Side note - don't try
-					and write code from scratch.
-				</p>
+			<div>
+				<h1 style="text-align:center;">Recent Blog Posts</h1>
 
-				<p>I want to make things better.</p>
-				<p>I want to do it correctly.</p>
-				<p>I want to do it effectively.</p>
-
-				<p>
-					My background allows me to talk to almost everyone (family
-					disagrees, but let's just ignore them).
-				</p>
-
-				<p>
-					If this is what you think about, I'd love to talk to you and
-					hear your thoughts.
-				</p>
-
-				<p>You can reach me here:</p>
-
-				<p>- Nik</p>
-
-				<div>
-					<h1 style="text-align:center;">Recent Blog Posts</h1>
-
-					<div class="grid">
-						{
-							posts.map((post) => (
-								<div class="card">
-									<h3 class="landing-hook">
-										<a href={`/blog/${post.slug}/`}>
-											{post.data.title}
-										</a>
-									</h3>
-									<description>
-										{post.data.description}{" "}
-									</description>
-									<FormattedDate date={post.data.pubDate} />
-								</div>
-							))
-						}
-					</div>
+				<div class="grid">
+					{
+						posts.map((post) => (
+							<div class="card">
+								<h3 class="landing-hook">
+									<a href={`/blog/${post.slug}/`}>
+										{post.data.title}
+									</a>
+								</h3>
+								<description>
+									{post.data.description}{" "}
+								</description>
+								<FormattedDate date={post.data.pubDate} />
+							</div>
+						))
+					}
 				</div>
 			</div>
 		</main>
+
 		<Footer />
 	</body>
 </html>
