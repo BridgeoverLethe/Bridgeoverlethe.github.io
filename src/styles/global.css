@@ -181,6 +181,11 @@ header {
 
 }
   
+.landing-hook  h1{
+	height:50vh; 
+	min-height: auto; 
+	background-color: black;
+}
   header h1 {
 	display: inline-grid;
 	min-height: var(--logomark-height);
