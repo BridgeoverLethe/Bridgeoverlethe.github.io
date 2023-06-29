@@ -177,6 +177,7 @@ header {
  .landing-hook  {
 	position: relative;
 	color: var(--color-light);
+	font-size: clamp(0.95rem, 3vw, 1rem);
 
 }
   
@@ -216,7 +217,8 @@ header {
 	margin: 0.25em;
 	padding: 0.25em 0.5em;
 	background-color: var(--color-secondary);
-  }
+
+ }
   
   .landing-hook  ul li:hover {
 	background-color: var(--color-orange);
