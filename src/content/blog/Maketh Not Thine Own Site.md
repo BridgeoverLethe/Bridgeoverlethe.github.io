@@ -1,7 +1,7 @@
 ---
 title: Maketh Not Thine Own Site
 description: Just dont do this
-pubDate: Jun 27 2022
+pubDate: "Jun 27 2023"
 share: "true"
 tags: ["llm", "gpt", "code", "dumb", "projects"]
 slug: maketh-thine-site

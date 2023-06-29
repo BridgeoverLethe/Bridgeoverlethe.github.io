@@ -1,7 +1,7 @@
 ---
 title: First post!
 description: "Nik uses astro and front matter to make a website. "
-pubDate: 2023-06-18T18:06:45.546Z
+pubDate: "Jun 18 2023"
 preview: ""
 draft: true
 tags: []
