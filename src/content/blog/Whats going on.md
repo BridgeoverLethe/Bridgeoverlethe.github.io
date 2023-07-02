@@ -3,6 +3,7 @@ title: "How did this blog get here"
 description: "self examination of a sort."
 pubDate: "Jun 22 2023"
 share: "true"
+heroImage: "hero-banner-stretch.jpg"
 ---
 
 The moment Chat GPT came out, and I got to use it beyond a point, I knew I wanted to create my own personal daemon. Secure, trained for my needs, and capable.

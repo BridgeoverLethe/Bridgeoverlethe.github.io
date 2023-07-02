@@ -54,6 +54,7 @@
  html {
 	overflow-x: hidden;
 	scroll-behavior: smooth;
+	height: 100%;
 	} 
 	
  
@@ -176,13 +177,20 @@ header {
  .landing-hook  {
 	position: relative;
 	color: var(--color-light);
-  }
+	font-size: clamp(0.95rem, 3vw, 1rem);
+
+}
   
+.landing-hook  h1{
+	height:50vh; 
+	min-height: auto; 
+	background-color: black;
+}
   header h1 {
 	display: inline-grid;
 	min-height: var(--logomark-height);
 	padding: var(--logomark-padding);
-	font-size: clamp(3rem, 6vw, 6rem);
+	font-size: clamp(3rem, 8vw, 10rem);
 	place-content: center;
   }
   .landing-hook  p {
@@ -214,7 +222,8 @@ header {
 	margin: 0.25em;
 	padding: 0.25em 0.5em;
 	background-color: var(--color-secondary);
-  }
+
+ }
   
   .landing-hook  ul li:hover {
 	background-color: var(--color-orange);
@@ -229,6 +238,8 @@ header {
 	 grid-template-columns: 1fr 1fr;
  }
  
+
+
  header a,
  main a,
  aside a,
@@ -277,7 +288,7 @@ header {
  main {
 	 grid-area: main;
 	 margin: 0;
-	 padding: 0;
+	 padding-bottom: 0.5rem;
  }
  
  footer.page-footer {
@@ -410,15 +421,14 @@ header {
   
   .card {
 	background-color: #fff;
-	border-radius: 5px;
-	border: 2px solid  #11305f;;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 0.3125rem;
+    border: 0.125rem solid #11305f;
+    box-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
 	padding: 1rem;
 	display: grid;
 	max-width: 20rem;
-	flex-wrap: hidden;
-	flex-direction: column;
-	justify-content: space-between;
+	grid-template-rows: min-content auto 1fr auto;
+	max-height: 18rem;
 	height: 100%;
 	margin: 1rem;
 }

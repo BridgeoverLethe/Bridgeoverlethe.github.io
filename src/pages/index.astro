@@ -6,7 +6,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { getCollection } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
 const posts = (await getCollection("blog"))
-	.sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf())
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 	.slice(0, 3);
 ---
 
@@ -20,7 +20,7 @@ const posts = (await getCollection("blog"))
 		<main>
 			<Nav />
 
-			<header class="landing-hook">
+			<header class="landing-hook" style="height:50vh; min-height: auto; background-color: black;">
 				<h1>Have you ever wondered?</h1>
 			</header>
 			<div class="container">
@@ -29,11 +29,11 @@ const posts = (await getCollection("blog"))
 						<li>How the web became what it is?</li>
 						<li>How should we measure moderation?</li>
 						<li>What, exactly, is an 'information ecosystem'?</li>
-						<li>What about languages without massive data sets?</li>
+						<li>How do we handle the language resource gap?</li>
 						<li>What date is the Spam apocalypse?</li>
 						<li>What makes a healthy community?</li>
 						<li>
-							Could I survive without coffee? <i class="fa fa-coffee"></i>
+							<i>Could I survive without coffee? <i class="fa fa-coffee"></i></i>
 						</li>
 					</ul>
 				</div>
@@ -72,6 +72,7 @@ const posts = (await getCollection("blog"))
 					{
 						posts.map((post) => (
 							<div class="card">
+								<img src={post.data.heroImage} alt="" width="auto" />
 								<h3 class="landing-hook">
 									<a href={`/blog/${post.slug}/`}>
 										{post.data.title}
@@ -81,11 +82,15 @@ const posts = (await getCollection("blog"))
 									{post.data.description}{" "}
 								</description>
 								<FormattedDate date={post.data.pubDate} />
-							</div>
+							
+								</div>
 						))
 					}
 				</div>
 			</div>
+		
+			 
+	
 		</main>
 
 		<Footer />
