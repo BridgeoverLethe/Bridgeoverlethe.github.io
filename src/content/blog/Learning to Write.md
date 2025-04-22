@@ -1,5 +1,6 @@
 ---
 title: "Procrastinating Writing: Learning to Write"
+slug: Learning to Write
 description: "I have to write 2 articles. I avoid by figuring out how to do it well"
 pubDate: "2023-08-15"
 share: "true"
