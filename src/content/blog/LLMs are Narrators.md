@@ -1,7 +1,7 @@
 ---
 title: LLMs are Narrators
 description: does this work?
-pubDate: "2025-04-25"
+pubDate: 2025-04-22
 share: "true"
 ---
 I find that most GenAI conversations end up covering similar pro/con positions constantly. I believe that most positions are resolved if:
