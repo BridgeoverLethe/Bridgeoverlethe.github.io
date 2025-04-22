@@ -1,6 +1,6 @@
 ---
 title: LLMs are Narrators
-description: does this work?
+description: The shoe seems to fit
 pubDate: 2025-04-22
 share: "true"
 ---
