@@ -1,5 +1,5 @@
 ---
-title: "{{LLMs are Narrators}}"
+title: LLMs are Narrators
 description: does this work?
 pubDate: "{{Jul 22 2022}}"
 share: "true"
