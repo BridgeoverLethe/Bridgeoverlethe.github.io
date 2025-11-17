@@ -4,7 +4,7 @@ description: Doomscrolling vs work scrolling
 pubDate: 2025-11-15
 share: "true"
 ---
-Theres several images that made 2025 interesting. This image from Jigsaw’s paper on GenAI usage amongst teens was one of them.
+Theres several images that made 2025 interesting. This image from Jigsaw’s paper on GenAI usage amongst teens was one of them. 
 
 ![[Pasted image 20251116123145.png | center]]
 Xu, R., Le, N., Park, R., Murray, L., Das, V., Kumar, D., & Goldberg, B. (2024). New contexts, old heuristics: How young people in India and the US trust online content in the age of generative AI (arXiv preprint arXiv:2405.02522). https://doi.org/10.48550/arXiv.2405.02522
