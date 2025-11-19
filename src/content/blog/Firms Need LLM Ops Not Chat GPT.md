@@ -30,18 +30,18 @@ https://twitter.com/swyx/status/1672686090589990912
 
 Anrej Karpathy saying: you should work on AI agents.
 Then also saying: "... large class of problems that I think are very easy, to imagine, very easy to build demos for, but are actually extremely hard to make products out of."
-![[Pasted image 20230704110058.png|Pasted image 20230704110058.png]]
+![Pasted image 20230704110058.png](/Images/Pasted%20image%2020230704110058.png)
 
-![[Pasted image 20230704105656.png|Pasted image 20230704105656.png]]
+![Pasted image 20230704105656.png](/Images/Pasted%20image%2020230704105656.png)
 
 
 Similarly: 
 
 "we were all hacking together at the AGI house which is a collective of a very talented AI researchers data scientists machine learning engineers and we all spent a Saturday trying to hack together um some cool projects all involving agents so for some contexts um we uh everyone on the team has tried agents and we've all come to the conclusion that they suck uh it's just
 
-![[Pasted image 20230704120558.png|Pasted image 20230704120558.png]]
+![Pasted image 20230704120558.png](/Images/Pasted%20image%2020230704120558.png)
 
-![[Pasted image 20230704120630.png|Pasted image 20230704120630.png]]
+![Pasted image 20230704120630.png](/Images/Pasted%20image%2020230704120630.png)
 
 https://github.com/tensorchord/Awesome-LLMOps#llmops
 https://cyces.co/blog/llmops-explained
@@ -94,6 +94,6 @@ https://kth.diva-portal.org/smash/get/diva2:1787721/FULLTEXT01.pdfz
 3.1.2 Evaluation Design The process of designing the zero-shot evaluation involved two key steps: 
 1. Designing and conducting initial testing of evaluation questions to assess model performance. 
 2. Finalizing a set of binary questions to evaluate whether the generated summaries fulfill the requirements based on the desired summary definition.
-![[Pasted image 20231113161459.png|Pasted image 20231113161459.png]]
+![Pasted image 20231113161459.png](/Images/Pasted%20image%2020231113161459.png)
 
 https://www.oreilly.com/radar/what-we-learned-from-a-year-of-building-with-llms-part-i/
