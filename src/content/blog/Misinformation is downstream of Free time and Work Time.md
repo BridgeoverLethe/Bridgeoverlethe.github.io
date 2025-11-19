@@ -27,4 +27,4 @@ In contrast, inauthentic actors have don’t have a minimum task size, and they 
 
 As a result misinformation spread is a function of people who want to get work done, dealing with people who want to waste or redirect their efforts. 
 
-Ok, theres lots wrong with this article, several positions are worded more emphatically than I am happy with, but I think I should have put the core forces together.have put the core forces together in 
+Ok, there's lots wrong with this article, several positions are worded more emphatically than I am happy with, but I think I should have put the core forces together.
